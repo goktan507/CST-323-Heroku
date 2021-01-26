@@ -7,13 +7,13 @@
 
 <div class = "tab" align="center">
 <?php if(!isset($_SESSION['username'])):?>
-&nbsp;  <a href = "index.php" style="text-align:center;">| Home</a>&nbsp;&nbsp; | &nbsp;&nbsp;
+&nbsp;  <a href = "/" style="text-align:center;">| Home</a>&nbsp;&nbsp; | &nbsp;&nbsp;
 		<a href = "login" style="text-align:center;"> Login</a>&nbsp;&nbsp; | &nbsp;&nbsp;
 		<a href = "register" style="text-align:center;">Register</a> &nbsp;&nbsp; | &nbsp;&nbsp;
 		<a href = "products" style="text-align:center;">Products</a> &nbsp;&nbsp; | &nbsp;&nbsp;
 <?php else:?>
 		<a style="text-align:left;">Welcome <?php echo $_SESSION['name']?></a>&nbsp; | &nbsp;&nbsp; 
-		<a href = "index.php" style="text-align:center;">Home</a>&nbsp;&nbsp; | &nbsp;&nbsp; 
+		<a href = "/" style="text-align:center;">Home</a>&nbsp;&nbsp; | &nbsp;&nbsp; 
 		<a href = "products" style="text-align:center;">Products</a> &nbsp;&nbsp; | &nbsp;&nbsp;
 		<form action="logout" method="POST">
 			<input type = "hidden" name = "_token" value = "<?php echo csrf_token() ?>"/>
