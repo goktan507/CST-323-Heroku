@@ -7,13 +7,13 @@ use App\Model\User;
 class SecurityDAO implements SecurityInterface
 {
 
-    private $servername = "localhost";
+    private $servername = "j21q532mu148i8ms.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 
-    private $username = "root";
+    private $username = "xie4tyradewdjl7q";
 
-    private $password = "root";
+    private $password = "w7b09yr0z1mpmxy8";
 
-    private $dbname = "e-storetable";
+    private $dbname = "ttq08bfaxdu3wzjb";
 
     private $connection = NULL;
 
