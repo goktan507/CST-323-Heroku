@@ -33,7 +33,7 @@ class loginController extends Controller{
     public function logout(){
         session_start();
         if(session_destroy()){
-            return view('products');
+            return view('loginForm');
         }
         return view('index');
     }
